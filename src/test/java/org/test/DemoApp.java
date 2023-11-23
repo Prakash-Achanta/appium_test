@@ -22,6 +22,8 @@ public class DemoApp {
 
         AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),options);
         driver.findElement(AppiumBy.accessibilityId("open menu")).click();
+        System.out.println("Clicked Menu");
         driver.findElement(By.xpath(("//android.view.ViewGroup[@content-desc='menu item log in']"))).click();
+        System.out.println("Clicked LogIn");
     }
 }
